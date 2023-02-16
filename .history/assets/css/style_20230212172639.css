@@ -1,0 +1,122 @@
+.header {
+  height: 80px;
+}
+.header--wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.road {
+  width: 17px;
+  height: 0;
+  border: 1px solid var(--gray);
+}
+/* banner */
+.banner {
+  max-width: 100%;
+  width: 100%;
+  /* height: 721px; */
+}
+.banner img {
+  width: 1000%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.form-search-layout {
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 0;
+  gap: 12px;
+}
+.form-search__input {
+  width: 100%;
+  height: 44px;
+  background-color: #ffff;
+  padding: 8px 16px;
+  display: flex;
+  gap: 4px;
+}
+#form-search__input {
+  border: none;
+  width: 100%;
+  font-size: 13px;
+}
+.form-search__road {
+  transform: rotate(90deg);
+  width: 30px;
+}
+.form-search__address {
+  width: 270px;
+  height: 44px;
+  padding: 8px 16px;
+  display: flex;
+  /* Khi ta chọn thằng input là 100% thì nó sẽ bóp thằng address xuống không còn có width 270px nữa, dể ta fix lỗi này ta cần có thuộc tính flex-shrink : 0 để nó xét width là 270px */
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+.form-search__left {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  align-items: center;
+}
+.form-search__left span {
+  color: var(--gray);
+}
+/* List */
+.suggest-about {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.suggest-about span {
+  margin-right: 12px;
+}
+.suggest-item {
+  display: flex;
+  gap: 8px;
+}
+.suggest-list {
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #021a84;
+  font-weight: 400;
+}
+/* job */
+.job-wrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job-header {
+}
+.job-heading {
+  height: 67px;
+  width: 67px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 12.3421px 30px rgba(0, 0, 0, 0.08);
+}
+.job-heading-cirle {
+}
+.job-list {
+}
+/* end job */

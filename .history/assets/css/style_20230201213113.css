@@ -1,0 +1,14 @@
+.header {
+  height: 80px;
+}
+.header--wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header--nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}

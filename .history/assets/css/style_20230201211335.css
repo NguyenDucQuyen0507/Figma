@@ -1,0 +1,11 @@
+.header {
+  height: 80px;
+}
+.header--wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header--nav__list {
+  display: flex;
+  gap: 14px;
+}

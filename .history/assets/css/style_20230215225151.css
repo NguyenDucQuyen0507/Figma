@@ -1,0 +1,510 @@
+.header {
+  height: 80px;
+}
+.header--wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.road {
+  width: 17px;
+  height: 0;
+  border: 1px solid var(--gray);
+}
+/* banner */
+.banner {
+  max-width: 100%;
+  width: 100%;
+  /* height: 721px; */
+}
+.banner img {
+  width: 1000%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.form-search-layout {
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 0;
+  gap: 12px;
+}
+.form-search__input {
+  width: 100%;
+  height: 44px;
+  background-color: #ffff;
+  padding: 8px 16px;
+  display: flex;
+  gap: 4px;
+}
+#form-search__input {
+  border: none;
+  width: 100%;
+  font-size: 13px;
+}
+.form-search__road {
+  transform: rotate(90deg);
+  width: 30px;
+}
+.form-search__address {
+  width: 270px;
+  height: 44px;
+  padding: 8px 16px;
+  display: flex;
+  /* Khi ta chọn thằng input là 100% thì nó sẽ bóp thằng address xuống không còn có width 270px nữa, dể ta fix lỗi này ta cần có thuộc tính flex-shrink : 0 để nó xét width là 270px */
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+.form-search__left {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  align-items: center;
+}
+.form-search__left span {
+  color: var(--gray);
+}
+/* List */
+.suggest-about {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.suggest-about span {
+  margin-right: 12px;
+}
+.suggest-item {
+  display: flex;
+  gap: 8px;
+}
+.suggest-list {
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #021a84;
+  font-weight: 400;
+}
+/* job */
+.job-wrapper {
+  margin-top: 80px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.job-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 67px;
+  width: 67px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 12.3421px 30px rgba(0, 0, 0, 0.08);
+}
+.job-heading-cirle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 53px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.job-list {
+  color: #021a84;
+  font-size: 18px;
+  transition: all linear 0.3s;
+}
+.job-list:hover {
+  text-decoration: underline;
+}
+/* end job */
+
+/* cart job */
+.job-cart {
+  display: grid;
+  /* nghĩa là nó sẽ chia 3 cột có cùng 1 kích thước */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.job-cart_list {
+  width: 365.33px;
+  height: 156px;
+  background: #ffffff;
+  /* Light/Yellow/50 */
+  border: 3px solid #021a84;
+  box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+.job-cart_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job-cart_img {
+  display: flex;
+  gap: 8px;
+}
+.job-cart_img span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.job-cart_title {
+  color: var(--purple-text);
+  font-weight: 400;
+  font-size: 12px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #021a84;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.job-cart_vnd {
+  display: flex;
+  /* align-items: center; */
+  gap: 4px;
+}
+.job-cart_price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  /* Light Invert Color/Text On Top */
+
+  color: #171717;
+}
+.job-cart_vnd span {
+  font-weight: 200;
+  color: #a6a6a6;
+}
+.job-cart_boder {
+  border: 1px solid #e5e5e5;
+}
+.job-cart_body {
+  display: flex;
+  justify-content: space-between;
+}
+.job-cart_rose {
+  /* display: flex; */
+}
+.job-cart_rose .job-cart_title {
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 0;
+}
+.job-cart_reward {
+  /* display: flex; */
+}
+.job-cart_reward .job-cart_title {
+  background-color: #ffff;
+  padding: 0;
+}
+
+.job-cart_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.job-cart_address {
+  display: flex;
+  gap: 16px;
+}
+.job-cart_address span {
+  padding: 4px 16px;
+  gap: 10px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--purple-text);
+}
+.job-cart_btn {
+  background: #fe4c4c;
+  border-radius: 8px;
+  padding: 4px 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+/* end cart job */
+
+/* introduction */
+.job-introduction {
+  margin-top: 80px;
+}
+.job-introduction_header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.job-introduction_heading {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 18px;
+}
+.job-introduction_item {
+  display: flex;
+  gap: 32px;
+}
+.job-introduction_list {
+  padding: 32px 32px 52px 32px;
+  border-radius: 16px;
+}
+.job-introduction_list:nth-child(1) {
+  background: var(--green-gradient);
+  color: #156d33;
+}
+.job-introduction_list:nth-child(2) {
+  background: var(--purple-gradient);
+  color: #010d42;
+}
+.job-introduction_list:nth-child(3) {
+  background: var(--red-gradient);
+  color: #e5532a;
+}
+.job-introduction_img {
+  margin-inline: auto;
+}
+
+.job-introduction_title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  text-align: center;
+}
+.job-introduction_des {
+  text-align: center;
+} /* end introduction */
+
+/*patner  */
+.job-patner {
+  margin-top: 80px;
+}
+.job-patner_header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.job-patner_item {
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+}
+.job-patner_list {
+  width: 156px;
+  height: 156px;
+  padding: 8px;
+}
+.job-patner_list img {
+  width: 100%;
+}
+.job-patner_cirle {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.job-patner_listCirle {
+  width: 10px;
+  height: 10px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+.job-patner_listCirle:nth-child(3) {
+  background: var(--primary);
+}
+/* end patner */
+/* process */
+.job-working {
+  margin-top: 80px;
+}
+.job-working_item {
+  display: flex;
+  gap: 100px;
+}
+
+.job-working_list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+.job-working_list img {
+  width: 102px;
+  height: 98.98px;
+  margin-inline: auto;
+}
+.job-working_cirle {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.job-working_cirleGray {
+  width: 24px;
+  height: 24px;
+  background: #999999;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-working_cirleGray span {
+  color: #ffff;
+  font-weight: 400;
+  font-size: 18px;
+}
+.job-working_create {
+  margin: auto;
+}
+.job-working_des {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+/* end process */
+/* subbaner */
+.job-subbaner {
+  margin-top: 100px;
+  display: flex;
+  background: linear-gradient(220.53deg, #0cc64b 0%, #26ab5b 76.95%);
+  border-radius: 20px;
+}
+.job-subbanerLeft {
+  display: flex;
+  flex: 1;
+  border-radius: 20px;
+  padding: 20px 40px;
+  align-items: center;
+  gap: 16px;
+}
+.job-subbaner_want {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffff;
+}
+.job-subbaner_help {
+  font-size: 15px;
+  color: #ffff;
+  font-weight: 300;
+}
+.job-subbanerRight {
+  background: rgba(255, 255, 255, 0.3);
+  width: 233px;
+  padding: 2px 40px;
+  display: flex;
+  align-items: center;
+}
+/* end subbaner */
+/* footer */
+.job-footer {
+  margin-top: 40px;
+}
+.job-footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+.job-footer_form {
+  display: flex;
+  gap: 16px;
+}
+.job-footer_btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.job-footer_input {
+  display: flex;
+  align-items: center;
+  min-width: 252px;
+  height: 50px;
+  padding: 8px 8px 8px 16px;
+  background: #ffffff;
+  /* Light Invert Color/Devider */
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+.job-footer_right {
+  display: flex;
+  gap: 36px;
+}
+.job-footer_work {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ob-footer_cirle {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.job-footer_number {
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.job-footer_work span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.job-footer_button {
+  margin-top: 40px;
+}
+.job-footer_list {
+  display: flex;
+}
+.job-footer_item {
+  flex: 1;
+}
+/* end footer */

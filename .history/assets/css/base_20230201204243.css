@@ -1,0 +1,28 @@
+:root {
+  --primary: #021a84;
+  --secondary: #fe4c4c;
+  --text: #171717;
+  --gray: #999999;
+  --light-gray: #e5e5e5;
+  --green-text: #2ada66;
+  --purple-text: #021a84;
+  --red-text: #e5532a;
+  --green-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #2ada66;
+  --purple-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #021a84;
+  --red-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    #e5532a;
+}
